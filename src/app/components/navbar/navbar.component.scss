@@ -1,0 +1,24 @@
+.navbar-nav a.menus {
+  text-decoration: none;
+  box-shadow: inset 0 -2px transparent;
+  transition: box-shadow 0.5s ease;
+}
+nav {
+  background-color: black !important;
+  height: 43px; //43
+}
+.navbar-nav a.menus.active,
+.navbar-nav a.menus:hover, .btn-link:hover {
+  box-shadow: inset 0 -2px var(--leia-color);
+}
+
+.logout-button {
+  transition: color 0.5s ease;
+}
+
+.logout-button:hover {
+  color: var(--leia-color)!important;
+}
+
+
+

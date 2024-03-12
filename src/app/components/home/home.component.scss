@@ -1,0 +1,103 @@
+.darth-vader-jpg{
+  width: 100%;
+}
+.hero-zone {
+  border-radius: 8px;
+  background-image: url('../../../assets/nueva-carpeta/img/img/r2p2.jpg');
+  background-size: 1100px;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+}
+.r2d2title {
+  color: var(--r2d2-color);
+}
+
+.i-text {
+  color: var(--leia-color);
+}
+
+.miBoton {
+  background-image: url('../../../assets/nueva-carpeta/img/img/buttonredlip.jpg');
+  background-size: cover;
+  margin-bottom: 120px;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border: none;
+  transition: transform 0.3s ease;
+
+}
+.miBoton:active {
+  transform: scale(0.95);
+}
+.stopButton {
+  background-image: url('../../../assets/nueva-carpeta/img/img/button-bleu.png');
+  border-radius: 100%;
+  background-size: cover;
+  margin-bottom: 120px;
+  border: none;
+  height: 80px;
+  width: 80px;
+  color: #fff;
+  padding: 10px;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.stopButton:active {
+  transform: scale(0.95);
+}
+
+#textoConEfecto {
+  display: block;
+  font-size: 16px;
+  white-space: pre-line;
+  color: var(--leia-color);
+  margin-top: 20px;
+  opacity: 1;
+  white-space: nowrap;
+  animation: typing 2s steps(40) 1s forwards, fadeIn 2s 3s forwards;
+  text-shadow: 2px 2px 1px rgb(0, 0, 0);
+}
+
+.title-section {
+  color: var(--leia-color);
+}
+.imgcardshot {
+  width: 200px;
+  height: 330px;
+
+}
+.cards-shots {
+
+  width: 210px;
+}
+.cards-shots-title {
+  color: var(--luke-color);
+}
+.btnfilms4 {
+  margin-top: 25px;
+  border-color: var(--luke-color);
+  background: var(--darthvader-color);
+}
+.btnfilms4:hover {
+  border-color: var(--chewee-color);
+  background: var(--darthvader-color);
+}
+.btnfilms {
+  border-color: var(--luke-color);
+  background: var(--darthvader-color);
+}
+.btnfilms:hover {
+  border-color: var(--chewee-color);
+  background: var(--darthvader-color);
+}
+a{
+  color: var(--chewee-color);
+  text-decoration: none ;
+}
+a:hover{
+  color: var(--r2d2-color);
+  text-decoration: underline var(--luke-color);
+}

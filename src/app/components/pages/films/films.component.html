@@ -1,0 +1,27 @@
+<div class="background-films m-4">
+  @if(films){
+    <div class="m-4 mx-auto col-10">
+      <h4 class="pb-2 mb-0 text-light ps-2 pt-2  border-top border-bottom  ">
+        FILMS
+      </h4>
+    </div>
+    <div class="d-flex gap-3 col-md-10 mx-auto justify-content-center flex-wrap">
+      @for(film of films; track film.name){
+        <div class="cardfilms col-10 rounded">
+          <img [src]="film.imageUrl" class="card-img-top rounded-top" [alt]="film.imageUrl">
+          <div class="card-body border-top border-danger border-1 rounded-bottom">
+            <p class="card-text mt-3 text-center"><span class="title-text">{{film.title}}</span></p>
+            <p class="card-text text-center"> Episode {{film.episode_id}}</p>
+          </div>
+        </div>
+      }
+    </div>
+  }
+  <div class="d-flex align-items-center justify-content-center mt-5 mb-5">
+    <app-footer></app-footer>
+  </div>
+</div>
+
+
+
+

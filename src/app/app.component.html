@@ -1,0 +1,66 @@
+<header class="container-fluid">
+  <div class="row mt-3 mb-3">
+    <div class="col-12 col-md-4 text-center">
+
+      <div class="social-links mt-3 gap-3 px-4 d-flex" >
+
+        <div class="social-icon">
+          <a class="url-icon" rel="noopener noreferrer" href="https://www.tiktok.com/@starwars" target="_blank">
+            <img class="icon-img" src="../../../../assets/nueva-carpeta/img/logos/tiktok.svg" alt="tiktok-svg">
+          </a>
+        </div>
+        <div class="social-icon">
+          <a class="url-icon" rel="noopener noreferrer" href="https://www.instagram.com/starwars/" target="_blank">
+            <img class="icon-img" src="../../../../assets/nueva-carpeta/img/logos/instagram.svg" alt="instagram-svg">
+          </a>
+        </div>
+        <div class="social-icon">
+          <a class="url-icon" rel="noopener noreferrer" href="https://twitter.com/starwars" target="_blank">
+            <img class="icon-img" src="../../../../assets/nueva-carpeta/img/logos/twitter.svg" alt="twitter-svg">
+          </a>
+        </div>
+        <div class="social-icon">
+          <a class="url-icon" rel="noopener noreferrer" href="https://www.facebook.com/StarWars" target="_blank">
+            <img class="icon-img" src="../../../../assets/nueva-carpeta/img/logos/facebook.svg" alt="facebook-svg">
+          </a>
+        </div>
+        <div class="social-icon">
+          <a class="url-icon" rel="noopener noreferrer" href="https://www.youtube.com/user/starwars" target="_blank">
+            <img class="icon-img" src="../../../../assets/nueva-carpeta/img/logos/youtube.svg" alt="youtube-svg">
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-12 col-md-4 text-center">
+      <img class="logo" src="../assets/nueva-carpeta/img/logos/starwars-white.png" alt="logo-starwars">
+    </div>
+
+    @if (user) {
+      <div class="col-12 col-md-4 d-flex justify-content-end box-1">
+        <div class="row mt-3 box-2">
+          <div class="col-12 me-4">
+            <span class="text-logged">WELCOME USER {{ getUserName() }} THIS IS THE WAY.</span>
+          </div>
+        </div>
+      </div>
+      }
+
+    <div class="col-12 col-md-4 d-flex justify-content-end box-1">
+      <div class="row mt-3 box-2">
+
+        <div class="col-12 me-4" *ngIf="!user">
+          <button class="btn  login-text" (click)="navigateToLogin()">LOG IN</button>
+          <span class="margin: 0 0.5rem">//</span>
+          <button class="btn  login-text" (click)="navigateToRegister()">SIGN UP</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<app-navbar [user]="user"/>
+<div class="container">
+  <router-outlet/>
+</div>
+
+

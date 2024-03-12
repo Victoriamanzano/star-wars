@@ -1,0 +1,15 @@
+$color-red: var(--r2d2-color);
+.redbord {
+  border-radius: 15px;
+  // background-color: var(--mando-color);
+  border: 1px solid $color-red;
+}
+
+h4{
+  text-transform: uppercase;
+  color: var(--leia-color);
+
+}
+p{
+  color: var(--luke-color);
+}

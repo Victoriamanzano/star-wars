@@ -1,0 +1,26 @@
+.cardreg {
+  border-color:  var(--r2d2-color);
+  background-color: var(--darthvader-color);
+}
+.cardtitle {
+  color: var(--leia-color);
+}
+.btnlogin {
+  color: var(--leia-color);
+  border-color: var(--luke-color);
+
+}
+.btnlogin:hover {
+  color: var(--r2d2-color);
+  border-color: var(--chewee-color);
+  background: var(--darthvader-color);
+}
+
+.btn-link {
+  color: var(--luke-color);
+  text-decoration: underline var(--luke-color);
+}
+.btn-link:hover {
+  color: var(--r2d2-color);
+  text-decoration: underline var(--chewee-color);
+}

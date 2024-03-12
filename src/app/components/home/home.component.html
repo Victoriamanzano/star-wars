@@ -1,0 +1,164 @@
+<div class="container-fluid " infiniteScroll
+  (scrolled)="onScrollDown()">
+  <div class="hero-zone  col-xxl-10 px-4 py-5  my-5 d-flex align-items-center">
+    <div class="align-items-center g-5 py-5 ">
+      <div class="d-none">
+       </div>
+
+        <div class="row">
+            <h2 class="r2d2title mb-3">
+          <i>
+            R2D2
+          </i>
+        </h2>
+        <p class="i-text fs-4">
+          Speaks to you!
+        </p>
+        <div class="fs-3 mb-1  " id="textoConEfecto" #textoConEfecto  style="white-space: pre-line; max-height: 200px; overflow-y: auto;"></div>
+        <div class="d-grid d-md-flex justify-content-md-start pt-2">
+          <div class="txt-watch">
+            <button class="miBoton text-white" id="miBoton" (click)="clicEnBoton()">
+              Click Me!!
+            </button>
+            <button class="stopButton text-white" id="stopButton" (click)="detenerTextoYAudio()">
+              Stop Me.
+            </button>
+          </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+  <div class="container title-section">
+    <h2 class="text-uppercase border-bottom text-center mt-1 py-3 fs-2">
+      TRAILERS STARWARS
+    </h2>
+  </div>
+  <div class="d-flex px-4">
+    <div class="container d-flex flex-wrap px-2 justify-content-center pt-5  mb-5 gap-3">
+      <div class="cards-shots rounded-2">
+          <img src="../../../assets/nueva-carpeta/img/img/film6.jpg" alt="" class="imgcardshot rounded-2">
+        <div class="cards-shots-body p-4 rounded-3">
+          <h5 class="cards-shots-title text-center">
+            EPISODE VI - RETURN OF THE JEDI
+          </h5>
+          <p class="cards-shots-text"></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center ">
+            <button type="button" class="btn btnfilms px-3 py-1 me-md-2 rounded-2">
+              <a class="txt-watch" href="https://www.youtube.com/watch?v=qQB2NXfJev0&ab_channel=StarJedi951" target="_blank">
+                Watch trailer
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="cards-shots rounded-2">
+         <img src="../../../assets/nueva-carpeta/img/img/film5.jpg" alt="" class="imgcardshot rounded-2">
+        <div class="cards-shots-body p-4 rounded-3">
+          <h5 class="cards-shots-title text-center">
+             EPISODE V - THE EMPIRE STRIKES BACK
+          </h5>
+          <p class="cards-shots-text"></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center ">
+            <button type="button" class="btn btnfilms px-3 py-1 me-md-2 rounded-2">
+              <a class="txt-watch" href="https://www.youtube.com/watch?v=JNwNXF9Y6kY&ab_channel=StarWars" target="_blank">
+                Watch trailer
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="cards-shots rounded-2">
+
+          <img src="../../../assets/nueva-carpeta/img/img/film4.jpg" alt="" class="imgcardshot rounded-2">
+
+        <div class="cards-shots-body p-4 rounded-3">
+
+          <h5 class="cards-shots-title text-center">
+            EPISODE IV - A NEW HOPE
+
+          </h5>
+          <p class="cards-shots-text"></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center ">
+            <button type="button" class="btn btnfilms4 px-3 py-1 me-md-2 rounded-2">
+              <a class="txt-watch" href="https://www.youtube.com/watch?v=vZ734NWnAHA&ab_channel=StarWars" target="_blank">
+                Watch trailer
+              </a>
+
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards-shots rounded-2">
+
+          <img src="../../../assets/nueva-carpeta/img/img/film3.jpg" alt="" class="imgcardshot rounded-2">
+
+        <div class="cards-shots-body p-4 rounded-3">
+
+          <h5 class="cards-shots-title text-center">
+             EPISODE III - REVENGE OF THE SITH
+
+          </h5>
+          <p class="cards-shots-text"></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center ">
+            <button type="button" class="btn btnfilms px-3 py-1 me-md-2 rounded-2">
+              <a class="txt-watch" href="https://www.youtube.com/watch?v=5UnjrG_N8hU&ab_channel=StarWars" target="_blank">
+                Watch trailer
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards-shots rounded-2">
+
+          <img src="../../../assets/nueva-carpeta/img/img/film2.jpg" alt="" class="imgcardshot rounded-2">
+
+        <div class="cards-shots-body p-4 rounded-3">
+
+          <h5 class="cards-shots-title text-center">
+             EPISODE II - ATTACK OF THE CLONES
+
+          </h5>
+          <p class="cards-shots-text"></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center ">
+            <button type="button" class="btn btnfilms px-3 py-1 me-md-2 rounded-2">
+              <a class="txt-watch" href="https://www.youtube.com/watch?v=gYbW1F_c9eM&ab_channel=StarWars" target="_blank">
+
+                Watch trailer
+              </a>
+
+            </button>
+          </div>
+        </div>
+      </div>
+
+     <div class="cards-shots rounded-2">
+
+          <img src="../../../assets/nueva-carpeta/img/img/film1.jpg" alt="" class="imgcardshot rounded-2" >
+
+        <div class="cards-shots-body p-4 rounded-3">
+
+          <h5 class="cards-shots-title text-center">
+             EPISODE I - THE PHANTOM MENACE
+
+          </h5>
+          <p class="cards-shots-text"></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center ">
+            <button type="button" class="btn btnfilms px-3 py-1 me-md-2 rounded-2">
+              <a class="txt-watch" href="https://www.youtube.com/watch?v=bD7bpG-zDJQ&ab_channel=StarWars" target="_blank">
+                Watch trailer
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="text-center mb-5 d-flex justify-content-center align-items-center">
+    <app-footer/>
+    </div>
+</div>

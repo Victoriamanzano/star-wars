@@ -1,0 +1,27 @@
+.background-films {
+
+   .cardfilms {
+      width: 210px;
+      border-radius: 5px;
+   }
+  .title-text {
+    font-size: 18px;
+    color: var(--leia-color);
+  }
+  .card-text {
+
+    color: var(--luke-color);
+    min-height: 51px;
+  }
+  .card-body {
+    background-color: var(--mando-color);
+
+  }
+
+}
+
+@media (max-width: 768px) {
+  .card{
+    width: 20rem !important;
+  }
+}

@@ -1,0 +1,44 @@
+<div class="background-starships m-4">
+  <h4 class="col-10 mx-auto pb-2 mb-0 text-light ps-2 pt-2 border-top border-bottom">STARSHIP</h4>
+  <section class="ship-card col-10 mb-3 mt-4 border border-0 mx-auto rounded-3">
+    <div class="row rowinfo g-0">
+      <div class="col-md-6 col-lg-5 p-0 border-end border-danger border-1 back-image">
+        <img class="img-fluid w-100 h-100" [src]="starshipDetails.imageURL" [alt]="starshipDetails.name"
+        (error)="starshipDetails.imageURL='assets/nueva-carpeta/img/img/404-darthvader-error.jpg'" >
+      </div>
+
+      <div class="col-md-6 col-lg-7 p-3 ">
+        <div class="">
+            <h5 class="card-title text-light">{{ starshipDetails?.details?.name }}</h5>
+            <div class="row">
+
+                <div class="col-md-12 text-secondary">
+                  <p class="textoeje mt-1"> <!-- texto de ejemplo -->
+                    Esta Ship mola pero el X-wing es un ágil caza estelar de Star Wars usado por la Alianza Rebelde y la Nueva República.
+                  </p>
+
+                    <div class="column-container">
+                      <div class="column">
+                        <p class="card-text"><span class="textdetails">Model: </span>{{ starshipDetails?.details?.model }}</p>
+                        <p class="card-text"><span class="textdetails">Cost in credits: </span>{{ starshipDetails?.details?.cost_in_credits }}</p>
+                        <p class="card-text"><span class="textdetails">Atmospheric Speed: </span>{{ starshipDetails?.details?.max_atmosphering_speed }}</p>
+
+                      </div>
+                       <div class="colmun">
+                        <p class="card-text"><span class="textdetails">Manufacturer: </span>{{ starshipDetails?.details?.manufacturer }}</p>
+                        <p class="card-text"><span class="textdetails">Length: </span>{{ starshipDetails?.details?.length }}</p>
+                        <p class="card-text"><span class="textdetails">Crew: </span>{{ starshipDetails?.details?.crew }}</p>
+                       </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </section>
+</div>
+
+<app-pilots/>
+<app-films/>
+

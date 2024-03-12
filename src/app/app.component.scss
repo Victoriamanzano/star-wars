@@ -1,0 +1,58 @@
+.logo {
+  width: 10rem;
+}
+
+.login-text {
+  color: var(--leia-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.welcome-message {
+  font-size: 0.7rem;
+}
+
+@media (max-width: 768px) {
+  .rrss {
+    visibility: hidden;
+  }
+
+  .box-1 {
+    justify-content: center !important;
+  }
+
+  .box-2{
+    text-align: center !important;
+  }
+
+  .box-3{
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo{
+    width: 20rem;
+  }
+
+  .welcome-message {
+    font-size: 1rem;
+  }
+}
+
+.icon-img {
+    max-width: 23px;
+}
+
+.text-logged{
+  color: var(--leia-color);
+
+}
+@media (max-width: 768px) {
+
+  .logo{
+    margin-top: 20px;
+    width: 150px !important;
+  }
+}

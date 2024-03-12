@@ -1,0 +1,61 @@
+$color-red: var(--r2d2-color);
+
+.rowinfo {
+  border-radius: 6px;
+  border: 2px solid $color-red;
+}
+
+h5 {
+  text-transform: uppercase;
+}
+
+.textoeje {
+  color: var(--leia-color);
+}
+
+.background-starships {
+
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+
+  .back-image {
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .card-title {
+    color: var(--leia-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .textdetails {
+    color: var(--leia-color);
+    font-weight: lighter;
+
+  }
+}
+
+.column-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .back-image {
+    border-bottom: 3px var(--boba-color);
+    border-right: none !important;
+  }
+}
