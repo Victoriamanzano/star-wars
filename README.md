@@ -7,7 +7,7 @@
 
 
 
-# <u>Star Wars Web App</u>
+# <u>STAR WARS Web App</u>
 
 Esta es una aplicación web de Star Wars diseñada para que los fanáticos de la saga puedan explorar datos emocionantes sobre naves espaciales, pilotos y películas. Desarrollada con Angular, esta aplicación ofrece una experiencia interactiva y visualmente atractiva.
 
